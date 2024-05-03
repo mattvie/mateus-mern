@@ -7,7 +7,7 @@ export default function GetPageContent() {
 
 
     useEffect(() => {
-        fetch('http://localhost:4000/get')
+        fetch('https://mateus-mern-server.vercel.app/get')
             .then(response => {
                 response.json().then(users => {
                     console.log(users);
