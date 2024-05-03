@@ -9,7 +9,7 @@ export default function PutForms() {
     async function send_put(ev) {
         ev.preventDefault();
 
-        const res = await fetch('http://localhost:4000/put', {
+        const res = await fetch('https://mateus-mern-server.vercel.app/put', {
             method: 'PUT',
             body: JSON.stringify({ username, email, password }),
             //Since the body is a JSON, we need to set some headers

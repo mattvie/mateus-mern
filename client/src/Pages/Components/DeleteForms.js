@@ -8,7 +8,7 @@ export default function DeleteForms() {
     async function send_delete(ev) {
         ev.preventDefault();
 
-        const res = await fetch('http://localhost:4000/delete', {
+        const res = await fetch('https://mateus-mern-server.vercel.app/delete', {
             method: 'DELETE',
             body: JSON.stringify({ username, password }),
             //Since the body is a JSON, we need to set some headers
