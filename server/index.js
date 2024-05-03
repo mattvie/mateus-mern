@@ -9,7 +9,13 @@ const salt = bcrypt.genSaltSync(10);
 
 const app = express();
 
-app.use(cors());
+app.use(cors(
+    {
+        origin: ["https://deploy-mern-frontend.vercel.app"],
+        methods: ["POST", "GET", "PUT", "DELETE"],
+        credentials: true
+    }
+));
 //enabling json parsing middleware
 app.use(express.json());
 
