@@ -7,7 +7,7 @@ export default function GetPageContent() {
 
 
     useEffect(() => {
-        fetch('https://mateus-mern-server.vercel.app/get')
+        fetch('https://mern-methods-server.vercel.app/get')
             .then(response => {
                 response.json().then(users => {
                     console.log(users);
