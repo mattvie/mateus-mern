@@ -11,7 +11,7 @@ const app = express();
 
 app.use(cors(
     {
-        origin: ["https://mateus-mern.vercel.app"],
+        origin: ["https://methods.mateus.vercel.app"],
         methods: ["POST", "GET", "PUT", "DELETE"],
         credentials: true
     }
